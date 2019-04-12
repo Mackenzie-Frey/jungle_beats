@@ -14,10 +14,9 @@ class LinkedList
   end
 
   def append(data)
-    # @head = Node.new(data)
-    # data
     delete_nil_head
     @head << Node.new(data)
+    change_next_node
     data
   end
 
@@ -28,12 +27,15 @@ class LinkedList
     @head
   end
 
+  def change_next_node
+    @head[0].next_node = @head[1]
+  end
+
   def count
     @head.count
   end
 
   def to_string
-    # self.head.data
     @head.map do |node|
       node.data
     end.join(" ")
