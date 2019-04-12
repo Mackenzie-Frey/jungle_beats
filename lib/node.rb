@@ -22,16 +22,33 @@ end
 
 
 # Setup
-require "./lib/node"
-require "./lib/linked_list"
-list = LinkedList.new
-list.head
-list.append("doop")
-list
-list.head
-list.head.next_node
+# require "./lib/node"
+# require "./lib/linked_list"
+# list = LinkedList.new
+# list.head
+# list.append("doop")
+# list
+# list.head
+# list.head.next_node
+#
+# list.append("deep")
+# list.head.next_node
+# list.count
+# list.to_string
 
-list.append("deep")
-list.head.next_node
-list.count
-list.to_string
+# require "./lib/node"
+# require "./lib/linked_list"
+# list = LinkedList.new
+# list.append("plop")
+# list.to_string
+# list.append("suu")
+# list.prepend("dop")
+# list.to_string
+
+
+# > list.count
+# => 3
+# > list.insert(1, "woo")
+# => "woo"
+# list.to_string
+# => "dop woo plop suu"
